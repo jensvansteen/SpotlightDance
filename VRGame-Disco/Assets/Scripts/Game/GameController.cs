@@ -42,7 +42,7 @@ public class GameController : MonoBehaviour
 		}
 		else
 		{
-			SceneManager.LoadScene("OutroCardboard");
+			SceneManager.LoadScene("Outro");
 		}
 		
 		
