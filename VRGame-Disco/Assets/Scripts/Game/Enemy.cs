@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
 	void Update ()
 	{
 		// Checjt de afstand tussen de player en de enemy, als het minder is als distancetoStop gaat het stoppem net chasen
-		if (Vector3.Distance(transform.position, player.transform.position) < distanceToStop)
+		/*if (Vector3.Distance(transform.position, player.transform.position) < distanceToStop)
 		{
 			chasingPlayer = false;
 		}
@@ -44,6 +44,8 @@ public class Enemy : MonoBehaviour
 				eatingTimer = eatingInterval;
 				player.health -= damage;
 			}
-		}
+		}*/
+		
+		
 	}
 }

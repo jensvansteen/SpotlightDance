@@ -34,6 +34,7 @@ public class Bullet : MonoBehaviour
 		{
 			Destroy(collider.gameObject);
 			Destroy(this.gameObject);
+			PlayerStats.instance.numEnemys = 0;
 			PlayerStats.instance.gameScore++;
 			/*gameController.gameScore++;*/
 		}

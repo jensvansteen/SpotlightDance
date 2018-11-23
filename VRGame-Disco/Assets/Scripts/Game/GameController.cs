@@ -10,7 +10,8 @@ public class GameController : MonoBehaviour
 
 	public Player player;
 	public GameObject enemyPrefab;
-	public TextMesh infoText;	
+	public TextMesh scoreText;
+	public TextMesh timeText;	
 	
 	public float enemySpawnDistance = 20f;
 
@@ -38,7 +39,8 @@ public class GameController : MonoBehaviour
 		gameTimer -= Time.deltaTime;
 		if (gameTimer > 0f)
 		{
-			infoText.text = "Hit all the enemies!\n Time: " + Math.Floor(gameTimer) + "\nScore: " + PlayerStats.instance.gameScore;
+			scoreText.text = "Score: " + PlayerStats.instance.gameScore;
+			timeText.text = "Time: " + Math.Floor(gameTimer);
 		}
 		else
 		{
@@ -67,22 +69,17 @@ public class GameController : MonoBehaviour
 	
 		/*Spawning of enemys na een bepaalde tijd.*/
 		enemyTimer -= Time.deltaTime;
-		if (enemyTimer <= 0)
+		if (PlayerStats.instance.numEnemys <= 0)
 		{
-			enemyTimer = enemyInterval;
-			enemyInterval -= enemyIntervalDecrement;
-			if (enemyInterval < minimumEnemyInterval)
-			{
-				enemyInterval = minimumEnemyInterval;
-			}
+			PlayerStats.instance.numEnemys = 1;
 			GameObject enemyObject = Instantiate(enemyPrefab);
 			Enemy enemy = enemyObject.GetComponent<Enemy>();
 			// 
 
-			float randomAngle = Random.Range(0f, Mathf.PI);
-			enemy.transform.position = new Vector3(player.transform.position.x + Mathf.Cos(randomAngle) * enemySpawnDistance, enemy.transform.position.y, player.transform.position.z + Mathf.Sin(randomAngle) * enemySpawnDistance);
+			enemy.transform.position = new Vector3(Random.Range(-5.5f, 2f), enemy.transform.position.y, Random.Range(-4.5f, 5f));
 			enemy.player = player;
 			enemy.direction = (player.transform.position - enemy.transform.position).normalized;
+			enemy.transform.LookAt( player.transform);
 		}
 		
 

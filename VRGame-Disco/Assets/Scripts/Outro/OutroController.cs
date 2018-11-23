@@ -11,7 +11,8 @@ public class OutroController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		infoText.text = "You finished the game with a score of: " + PlayerStats.instance.gameScore;
-		
+		PlayerStats.instance.numEnemys = 0;
+		PlayerStats.instance.gameScore = 0;
 		
 		
 		float timeToLoadScene = 5;
@@ -23,7 +24,6 @@ public class OutroController : MonoBehaviour {
 		
 		if (Input.GetKeyDown("space") || Input.GetButtonDown("Fire1"))
 		{
-			PlayerStats.instance.gameScore = 0;
 			SceneManager.LoadScene("Game");
 		}
 		

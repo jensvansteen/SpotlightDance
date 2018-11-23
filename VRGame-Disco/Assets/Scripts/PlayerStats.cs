@@ -10,6 +10,7 @@ public class PlayerStats : MonoBehaviour
 
 	public static PlayerStats instance = null;
 	public int gameScore = 0;
+	public int numEnemys = 0;
 
 
 	private void Awake()
