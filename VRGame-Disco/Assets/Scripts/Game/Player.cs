@@ -7,9 +7,15 @@ public class Player : MonoBehaviour
 {
 
 	/*public GameController gameController;*/
+	
+	[SerializeField] private LineRenderer m_LineRenderer = null; 
+	public bool ShowLineRenderer = true;                         
+	[SerializeField] private Transform m_TrackingSpace = null; 
+	
+	
 	public int health = 100;
 	public GameObject bulletPrefab;
-
+	
 
 	public float shootingCooldown = 0.1f;
 	public float meleeCooldown = 0.5f;
@@ -23,9 +29,13 @@ public class Player : MonoBehaviour
 		
 	}
 	
+
+	
 	// Update is called once per frame
 	void Update ()
 	{
+
+		
 
 		shootingTimer -= Time.deltaTime;
 		

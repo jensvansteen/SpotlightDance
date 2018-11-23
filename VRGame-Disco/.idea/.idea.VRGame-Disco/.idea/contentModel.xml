@@ -680,6 +680,106 @@
           </e>
           <e p="PlayerStats.cs" t="Include" />
         </e>
+        <e p="TutorialInfo" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ReadmeEditor.cs" t="Include" />
+            </e>
+            <e p="Readme.cs" t="Include" />
+          </e>
+        </e>
+        <e p="VRSampleScenes" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="RobotoLicense.txt" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Common" t="Include">
+              <e p="SessionData.cs" t="Include" />
+            </e>
+            <e p="Examples" t="Include">
+              <e p="ExampleInteractiveItem.cs" t="Include" />
+              <e p="ExampleRenderScale.cs" t="Include" />
+              <e p="ExampleRotation.cs" t="Include" />
+              <e p="ExampleTouchpad.cs" t="Include" />
+            </e>
+            <e p="Flyer" t="Include">
+              <e p="Asteroid.cs" t="Include" />
+              <e p="AsteroidExplosion.cs" t="Include" />
+              <e p="EnvironmentController.cs" t="Include" />
+              <e p="ExplosionPhysicsForce.cs" t="Include" />
+              <e p="FlyerAlignmentChecker.cs" t="Include" />
+              <e p="FlyerGameController.cs" t="Include" />
+              <e p="FlyerHealthController.cs" t="Include" />
+              <e p="FlyerLaser.cs" t="Include" />
+              <e p="FlyerLaserController.cs" t="Include" />
+              <e p="FlyerMovementController.cs" t="Include" />
+              <e p="ParticleSystemMultiplier.cs" t="Include" />
+              <e p="Ring.cs" t="Include" />
+              <e p="UIController.cs" t="Include" />
+            </e>
+            <e p="Intro" t="Include">
+              <e p="IntroManager.cs" t="Include" />
+            </e>
+            <e p="Maze" t="Include">
+              <e p="AgentTrail.cs" t="Include" />
+              <e p="AICharacterControl.cs" t="Include" />
+              <e p="CameraOrbit.cs" t="Include" />
+              <e p="DestinationMarker.cs" t="Include" />
+              <e p="ExitArea.cs" t="Include" />
+              <e p="MazeGameController.cs" t="Include" />
+              <e p="MazeTargetSetting.cs" t="Include" />
+              <e p="Player.cs" t="Include" />
+              <e p="SwitchButton.cs" t="Include" />
+              <e p="ThirdPersonCharacter.cs" t="Include" />
+              <e p="Turret.cs" t="Include" />
+            </e>
+            <e p="Menu" t="Include">
+              <e p="MenuAnimator.cs" t="Include" />
+              <e p="MenuButton.cs" t="Include" />
+              <e p="MenuItemPopout.cs" t="Include" />
+              <e p="MenuSelectorMover.cs" t="Include" />
+            </e>
+            <e p="ShootingGallery" t="Include">
+              <e p="ShootingGalleryController.cs" t="Include" />
+              <e p="ShootingGalleryGun.cs" t="Include" />
+              <e p="ShootingGalleryScore.cs" t="Include" />
+              <e p="ShootingTarget.cs" t="Include" />
+              <e p="UIController.cs" t="Include" />
+            </e>
+            <e p="Utils" t="Include">
+              <e p="GUIArrows.cs" t="Include" />
+              <e p="InputWarnings.cs" t="Include" />
+              <e p="ObjectPool.cs" t="Include" />
+              <e p="PlatformDependentText.cs" t="Include" />
+              <e p="Reticle.cs" t="Include" />
+              <e p="ReturnToMainMenu.cs" t="Include" />
+              <e p="SelectionRadial.cs" t="Include" />
+              <e p="SelectionSlider.cs" t="Include" />
+              <e p="UIFader.cs" t="Include" />
+              <e p="UIMovement.cs" t="Include" />
+              <e p="UITint.cs" t="Include" />
+              <e p="VRCameraFade.cs" t="Include" />
+              <e p="VRCameraUI.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="PriorityParticleAlpha.shader" t="Include" />
+            <e p="SeparableAlpha.shader" t="Include" />
+            <e p="SlidingUV.shader" t="Include" />
+            <e p="UIOverlay.shader" t="Include" />
+            <e p="UnlitTransparentParam.shader" t="Include" />
+          </e>
+        </e>
+        <e p="VRStandardAssets" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="VRDeviceManager.cs" t="Include" />
+            <e p="VREyeRaycaster.cs" t="Include" />
+            <e p="VRFPSCounter.cs" t="Include" />
+            <e p="VRInput.cs" t="Include" />
+            <e p="VRInteractiveItem.cs" t="Include" />
+            <e p="VRTrackingReset.cs" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
